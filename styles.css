@@ -1,20 +1,23 @@
 body,
 html {
   font-family: "Inter", sans-serif;
+  margin: 0;
 }
 
 header {
-  border: 1px solid red;
+  /*   border: 1px solid red;
+ */
   height: 152px;
 }
 
-section {
-  border: 1px solid purple;
-  height: 340px;
-}
+/* section {
+     border: 1px solid purple;
+    height: 340px;
+} */
 
 main {
-  border: 1px solid blue;
+  /*   border: 1px solid blue;
+ */
   height: auto;
 }
 
@@ -27,7 +30,8 @@ footer {
 .container {
   max-width: 1220px;
   margin: 0 auto;
-  border: 1px solid springgreen;
+  /*   border: 1px solid springgreen;
+ */
   height: inherit;
   min-height: inherit;
 }
@@ -37,6 +41,7 @@ footer {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 50px;
   justify-items: center;
+  padding: 30px 0;
   /*   display: flex;
   flex-wrap: wrap;
   gap: 80px;
@@ -109,7 +114,7 @@ footer {
 /* Hero section */
 #hero {
   border: 1px solid purple;
-  height: 340px;
+  height: 220px;
   background: url("../assets/hero_bg.png");
   background-size: cover;
   background-position: top center;
@@ -136,10 +141,73 @@ footer {
   line-height: 80px;
 }
 
+header {
+  background-color: #ff3b3c; /* Ejemplo de color */
+}
+.search {
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.search .form {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+.search .form input {
+  height: 62px;
+  border-radius: 14px;
+  border: none;
+  width: 505px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.search .social ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+.search .social ul li {
+  padding: 0 10px;
+}
+.nav {
+  padding: 10px 50px;
+}
+.nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.nav ul li a {
+  color: white;
+  font-weight: 700;
+  text-align: left;
+  text-decoration: none;
+}
+.nav ul li a:hover {
+  text-decoration: underline;
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .product-container {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .logo img {
+    width: 100px;
   }
 }
 
