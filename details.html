@@ -9,6 +9,7 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="./styles/styles.css">
+   <link rel="stylesheet" href="./styles/details.css">
 </head>
 
 <body>
@@ -18,12 +19,6 @@
             <a class="logo" href="./index.html">
                <img src=" /assets/tiendamia-logo.svg" width="218" alt="Logo store">
             </a>
-
-            <div class="form">
-               <form>
-                  <input type="text" placeholder="Search" name="search" />
-               </form>
-            </div>
             <div class="social">
                <ul>
                   <li><a href=""><img src="./assets/facebook.png" alt=""></a></li>
@@ -46,17 +41,75 @@
 
 
    </header>
-   <section id="hero">
-      <div class="container">
-         <div class="title-container">
-            <span>tecnología</span>
-            <span>renovada</span>
-         </div>
-      </div>
-   </section>
+
 
    <main>
       <div class="container">
+         <div class="columns-container">
+            <div class="product-images-block">
+               <div class="thumbnail-container">
+                  <img src="./assets/mock1.jpg" alt="Descripción de la imagen 1" />
+               </div>
+               <div class="thumbnail-container">
+                  <img src="./assets/mock2.jpg" alt="Descripción de la imagen 2" />
+               </div>
+               <img class="main-image" src="./assets/mock2.jpg" alt="Descripción de la imagen 2" />
+               <!-- Agregar más miniaturas según sea necesario -->
+            </div>
+
+            <div class="product-description-block">
+               <h2 class="titulo">Macbook</h2>
+               <form class="selector">
+                  <fieldset>
+                     <span class="label">Color</span>
+                     <select type="text" placeholder="Selecciona un color" id="select-color">
+                        <option value="negro espacial">Negro espacial</option>
+                        <option value="gris espacial">Gris espacial</option>
+                     </select>
+                  </fieldset>
+               </form>
+               <div class="description">
+                  <h3>Descripción:</h3>
+                  <p>CPU de 8 núcleos con 4 de rendimiento y 4 de eficiencia</p>
+               </div>
+            </div>
+            <div class="product-checkout-block">
+               <div class="checkout-container">
+                  <span class="checkout-total-label">Total:</span>
+                  <h2 class="checkout-total-price">$152.400</h2>
+                  <p class="checkout-description">
+                     Incluye impuesto PAIS y percepción AFIP. Podés recuperar AR$ 50711
+                     haciendo la solicitud en AFIP.
+                  </p>
+                  <ul class="checkout-policy-list">
+                     <li>
+                        <span class="policy-icon"><img src="../assets/truck.png" alt="Truck" /></span>
+                        <span class="policy-desc">Agrega el producto al carrito para conocer los costos de envío</span>
+                     </li>
+                     <li>
+                        <span class="policy-icon"><img src="../assets/plane.png" alt="Plane" /></span>
+                        <span class="policy-desc">Recibí aproximadamente entre 10 y 15 días hábiles, seleccionando
+                           envío normal</span>
+                     </li>
+                  </ul>
+                  <div class="checkout-process">
+                     <div class="top">
+                        <input type="number" value="1" id="number-product" />
+                        <button class="btn-primary">Comprar</button>
+                     </div>
+                     <div class="bottom">
+                        <button class="btn-outline">Añadir al Carrito</button>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </main>
+   <section>
+      <div class="container">
+         <h2 class="title-ofertas">Ofertas de la semana</h2>
          <div class="product-container">
             <a class="product-card" href="./details.html">
                <img class="product-img" src="./assets/mock1.jpg" alt="Macbook Pro" />
@@ -94,46 +147,10 @@
                   <div class="product-tax-policy">Incluye impuesto País y percepción AFIP</div>
                </div>
             </a>
-            <a class="product-card" href="./details.html">
-               <img class="product-img" src="./assets/mock1.jpg" alt="Macbook Pro" />
-               <div class="product-info">
-                  <span class="product-title">Macbook Pro 15'4</span>
-                  <span class="product-description">Space Gray</span>
-                  <div class="product-price-block">
-                     <span class="price">$750.000</span>
-                     <span class="discount">50% Off</span>
-                  </div>
-                  <div class="product-tax-policy">Incluye impuesto País y percepción AFIP</div>
-               </div>
-            </a>
-            <a class="product-card" href="./details.html">
-               <img class="product-img" src="./assets/mock1.jpg" alt="Macbook Pro" />
-               <div class="product-info">
-                  <span class="product-title">Macbook Pro 15'4</span>
-                  <span class="product-description">Space Gray</span>
-                  <div class="product-price-block">
-                     <span class="price">$750.000</span>
-                     <span class="discount">50% Off</span>
-                  </div>
-                  <div class="product-tax-policy">Incluye impuesto País y percepción AFIP</div>
-               </div>
-            </a>
-            <a class="product-card" href="./details.html">
-               <img class="product-img" src="./assets/mock1.jpg" alt="Macbook Pro" />
-               <div class="product-info">
-                  <span class="product-title">Macbook Pro 15'4</span>
-                  <span class="product-description">Space Gray</span>
-                  <div class="product-price-block">
-                     <span class="price">$750.000</span>
-                     <span class="discount">50% Off</span>
-                  </div>
-                  <div class="product-tax-policy">Incluye impuesto País y percepción AFIP</div>
-               </div>
-            </a>
+
          </div>
       </div>
-   </main>
-
+   </section>
    <footer>
       <div class="container">
          <div class="columns-container">
